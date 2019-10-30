@@ -17,4 +17,4 @@ ENV LANG C.UTF-8
 ENV LC_ALL C.UTF-8
 
 STOPSIGNAL SIGTERM
-CMD  mkdocs build -d /mkdocs
+CMD  mkdocs build -f /mkdocs/mkdocs.yml
