@@ -11,7 +11,7 @@ RUN apt update \
     && pip3 install mkdocs-material \
     && pip3 install cairocffi==1.0.2 \
     && pip3 install mkdocs-pdf-export-plugin \
-    && export LC_ALL=C.UTF-8 \
+    && echo "LC_ALL=C.UTF-8" >> /etc/profile \
     && apt clean -y
 
 STOPSIGNAL SIGTERM
