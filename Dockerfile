@@ -13,6 +13,8 @@ RUN apt update \
     && pip3 install mkdocs-pdf-export-plugin \
     && echo "LC_ALL=C.UTF-8" >> /etc/profile \
     && apt clean -y
+ENV LANG C.UTF-8
+ENV LC_ALL C.UTF-8
 
 STOPSIGNAL SIGTERM
 CMD  mkdocs build -d /mkdocs
