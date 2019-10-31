@@ -3,7 +3,7 @@ FROM ubuntu:18.04
 MAINTAINER Justin Henderson justin@hasecuritysolutions.com
 
 RUN apt update \
-    && apt install -y build-essential python3-dev python3-pip python3-setuptools python3-wheel python3-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info \
+    && apt install -y build-essential python3-dev python3-pip ttf-mscorefonts-installer python3-setuptools python3-wheel python3-cffi libcairo2 libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info \
     && pip3 install --upgrade pip setuptools \
     && export PATH="${HOME}/.local/bin:$PATH" \
     && pip3 install WeasyPrint==49 \
