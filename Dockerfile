@@ -12,6 +12,7 @@ RUN apt update \
     && pip3 install mkdocs-material \
     && pip3 install cairocffi==1.0.2 \
     && pip3 install mkdocs-pdf-export-plugin \
+    && pip3 install mkdocs-exclude \
     && echo "LC_ALL=C.UTF-8" >> /etc/profile \
     && apt clean -y
 ENV LANG C.UTF-8
