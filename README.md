@@ -5,7 +5,7 @@ This is a pre-built mkdocs image for use with markdown hosting of course content
 
 ```bash
 wget https://raw.githubusercontent.com/HASecuritySolutions/elastic_stack/master/scripts/prereq.sh
-bash prereq.sh
+sudo bash prereq.sh
 ```
 
 ## Download mkdocs image
